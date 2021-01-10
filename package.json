@@ -1,0 +1,49 @@
+{
+  "name": "@hitechline/react-wizard",
+  "version": "0.0.1-b",
+  "license": "AGPL-3.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "types": "typings/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist typings",
+    "prepublishOnly": "yarn build",
+    "build": "tsc --outDir dist/es && tsc --outDir dist/cjs --module CommonJS",
+    "prebuild": "yarn clean",
+    "fix": "yarn lint:fix && yarn prettier:fix",
+    "lint": "eslint ./ --ext js,jsx,ts,tsx",
+    "lint:fix": "eslint ./ --ext js,jsx,ts,tsx --fix",
+    "prettier": "prettier --check ./**/*.{js,jsx,ts,tsx}",
+    "prettier:fix": "prettier --write ./**/*.{js,jsx,ts,tsx}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hitechline/react-wizard.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "directories": {
+    "lib": "src"
+  },
+  "files": [
+    "dist",
+    "typings"
+  ],
+  "keywords": [
+    "react"
+  ],
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@hitechline/eslint-config-web": "^1.0.2",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "eslint": "^7.17.0",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.3"
+  }
+}
