@@ -1,8 +1,8 @@
+import { mergeClassNames } from '@hitechline/react';
 import React, { useEffect } from 'react';
 
 import useWizard from '../hooks/useWizard';
 import { StepsProps } from '../types';
-import mergeClassNames from '../utils/mergeClassNames';
 
 const Steps = ({ children, className, ...props }: StepsProps): JSX.Element => {
   const { current, getStep, registerSteps } = useWizard();

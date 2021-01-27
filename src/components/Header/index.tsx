@@ -1,9 +1,8 @@
-import cn from 'classnames';
+import { mergeClassNames } from '@hitechline/react';
 import React, { useMemo, useCallback } from 'react';
 
 import useWizard from '../../hooks/useWizard';
 import { HeaderProps } from '../../types';
-import mergeClassNames from '../../utils/mergeClassNames';
 import { Container, Part, Name } from './styles';
 
 const Header = ({ custom, className, ...props }: HeaderProps): JSX.Element => {
@@ -36,7 +35,7 @@ const Header = ({ custom, className, ...props }: HeaderProps): JSX.Element => {
       {data.map(({ title, element, index, indexSum }) => (
         <Part
           key={indexSum}
-          className={cn({
+          className={mergeClassNames({
             active: hasActive(index),
             selected: hasSelected(index),
           })}

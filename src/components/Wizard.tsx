@@ -1,8 +1,8 @@
+import { mergeClassNames } from '@hitechline/react';
 import React from 'react';
 
 import { Provider } from '../Context';
 import { WizardProps } from '../types';
-import mergeClassNames from '../utils/mergeClassNames';
 
 const Wizard = ({
   children,
