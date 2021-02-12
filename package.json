@@ -47,7 +47,7 @@
   "devDependencies": {
     "@hitechline/eslint-config-web": "1.1.0",
     "@types/classnames": "2.2.11",
-    "@types/react": "17.0.1",
+    "@types/react": "17.0.2",
     "@types/react-dom": "17.0.0",
     "eslint": "7.19.0",
     "prettier": "2.2.1",
