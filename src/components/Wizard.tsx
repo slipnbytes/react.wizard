@@ -1,4 +1,4 @@
-import { mergeClassNames } from '@hitechline/react';
+import { mergeClassNames } from '@hitechline/reactools';
 import React from 'react';
 
 import { Provider } from '../Context';

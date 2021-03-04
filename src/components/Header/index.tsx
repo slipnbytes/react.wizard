@@ -1,4 +1,4 @@
-import { mergeClassNames } from '@hitechline/react';
+import { mergeClassNames } from '@hitechline/reactools';
 import React, { useMemo, useCallback } from 'react';
 
 import useWizard from '../../hooks/useWizard';

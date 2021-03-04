@@ -1,4 +1,4 @@
-import { mergeClassNames } from '@hitechline/react';
+import { mergeClassNames } from '@hitechline/reactools';
 import React, { useEffect } from 'react';
 
 import useWizard from '../hooks/useWizard';
