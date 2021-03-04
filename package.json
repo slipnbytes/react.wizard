@@ -1,6 +1,6 @@
 {
   "name": "@hitechline/react-wizard",
-  "version": "0.0.1-b",
+  "version": "0.0.0",
   "license": "AGPL-3.0",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
@@ -8,9 +8,11 @@
   "scripts": {
     "clean": "rimraf dist typings",
     "prepublishOnly": "yarn build",
-    "build:watch": "tsc --outDir dist/es -w",
+    "release": "semantic-release",
+    "release:local": "node-env-run --exec \"semantic-release\"",
     "build": "tsc --outDir dist/es && tsc --outDir dist/cjs --module CommonJS",
     "prebuild": "yarn clean",
+    "build:watch": "tsc --outDir dist/es -w",
     "fix": "yarn lint:fix && yarn prettier:fix",
     "lint": "eslint ./ --ext js,jsx,ts,tsx",
     "lint:fix": "eslint ./ --ext js,jsx,ts,tsx --fix",
@@ -57,6 +59,7 @@
     "@types/react": "17.0.1",
     "@types/react-dom": "17.0.0",
     "eslint": "7.19.0",
+    "node-env-run": "^4.0.2",
     "prettier": "2.2.1",
     "rimraf": "3.0.2",
     "semantic-release": "^17.4.1",
