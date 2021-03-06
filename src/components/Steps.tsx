@@ -9,7 +9,7 @@ const Steps = ({ children, className, ...props }: StepsProps): JSX.Element => {
 
   useEffect(() => {
     registerSteps(children);
-  }, []);
+  }, [children]);
 
   return (
     <div {...props} className={mergeClassNames('wizard-steps', className)}>
