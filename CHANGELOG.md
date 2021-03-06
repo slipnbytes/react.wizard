@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/hitechline/react-wizard/compare/v1.0.0...v1.0.1) (2021-03-06)
+
+
+### Bug Fixes
+
+* add `children` in dependency list ([ee61a32](https://github.com/hitechline/react-wizard/commit/ee61a3215cdce66a053a3a3ec16aeb354eeb4a19))
+
 # 1.0.0 (2021-03-04)
 
 
