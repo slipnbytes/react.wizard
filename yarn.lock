@@ -205,7 +205,7 @@
   resolved "https://registry.yarnpkg.com/@hitechline/reactools/-/reactools-1.1.0.tgz#93b47adcbd6d74ce4ed4a995ca84e1acdde46975"
   integrity sha512-IF6cPJ3F5VDkN9TENoiA7bX9hz7iGg4+Mzv3WOkqn7z/RRUxT3KB/i9VGXU6GUBX64Q2fMrlZWu26g3nXIc+5g==
 
-"@hitechline/semantic-release-config@^1.2.0":
+"@hitechline/semantic-release-config@1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@hitechline/semantic-release-config/-/semantic-release-config-1.2.0.tgz#15b06574772b7418ad259595fad59fbc76293511"
   integrity sha512-+PHDVfPIf1WUUmyWxr23KeFh5LAIxemBH9uND4Z72PdGiJIHeaVTNXaBhqawxTRb1kXbN0hFDBjYMS+jUtTQUQ==
@@ -333,7 +333,7 @@
   dependencies:
     "@octokit/openapi-types" "^5.2.2"
 
-"@semantic-release/changelog@^5.0.1":
+"@semantic-release/changelog@5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@semantic-release/changelog/-/changelog-5.0.1.tgz#50a84b63e5d391b7debfe021421589fa2bcdafe4"
   integrity sha512-unvqHo5jk4dvAf2nZ3aw4imrlwQ2I50eVVvq9D47Qc3R+keNqepx1vDYwkjF8guFXnOYaYcR28yrZWno1hFbiw==
@@ -343,7 +343,7 @@
     fs-extra "^9.0.0"
     lodash "^4.17.4"
 
-"@semantic-release/commit-analyzer@^8.0.0", "@semantic-release/commit-analyzer@^8.0.1":
+"@semantic-release/commit-analyzer@8.0.1", "@semantic-release/commit-analyzer@^8.0.0":
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/@semantic-release/commit-analyzer/-/commit-analyzer-8.0.1.tgz#5d2a37cd5a3312da0e3ac05b1ca348bf60b90bca"
   integrity sha512-5bJma/oB7B4MtwUkZC2Bf7O1MHfi4gWe4mA+MIQ3lsEV0b422Bvl1z5HRpplDnMLHH3EXMoRdEng6Ds5wUqA3A==
@@ -361,7 +361,7 @@
   resolved "https://registry.yarnpkg.com/@semantic-release/error/-/error-2.2.0.tgz#ee9d5a09c9969eade1ec864776aeda5c5cddbbf0"
   integrity sha512-9Tj/qn+y2j+sjCI3Jd+qseGtHjOAeg7dU2/lVcqIQ9TV3QDaDXDYXcoOHU+7o2Hwh8L8ymL4gfuO7KxDs3q2zg==
 
-"@semantic-release/git@^9.0.0":
+"@semantic-release/git@9.0.0":
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/@semantic-release/git/-/git-9.0.0.tgz#304c4883c87d095b1faaae93300f1f1e0466e9a5"
   integrity sha512-AZ4Zha5NAPAciIJH3ipzw/WU9qLAn8ENaoVAhD6srRPxTpTzuV3NhNh14rcAo8Paj9dO+5u4rTKcpetOBluYVw==
@@ -375,7 +375,7 @@
     micromatch "^4.0.0"
     p-reduce "^2.0.0"
 
-"@semantic-release/github@^7.0.0", "@semantic-release/github@^7.2.0":
+"@semantic-release/github@7.2.0", "@semantic-release/github@^7.0.0":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-7.2.0.tgz#925f3efd91adabfc4bbe0de24b79fe1a8a38b4e2"
   integrity sha512-tMRnWiiWb43whRHvbDGXq4DGEbKRi56glDpXDJZit4PIiwDPX7Kx3QzmwRtDOcG+8lcpGjpdPabYZ9NBxoI2mw==
@@ -397,7 +397,7 @@
     p-retry "^4.0.0"
     url-join "^4.0.0"
 
-"@semantic-release/npm@^7.0.0", "@semantic-release/npm@^7.0.10":
+"@semantic-release/npm@7.0.10", "@semantic-release/npm@^7.0.0":
   version "7.0.10"
   resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-7.0.10.tgz#85e5b201e71896ecc3f45d7a496f5485f97df0b8"
   integrity sha512-DXFEhgSt5u22imTWbw8wfcVGB90nFJNcjUBtJI3zswJojzZ7yXpY4i2Va5RBRQRTtj00BfG0stbilAtKrKp35g==
@@ -416,7 +416,7 @@
     semver "^7.1.2"
     tempy "^1.0.0"
 
-"@semantic-release/release-notes-generator@^9.0.0", "@semantic-release/release-notes-generator@^9.0.1":
+"@semantic-release/release-notes-generator@9.0.1", "@semantic-release/release-notes-generator@^9.0.0":
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/@semantic-release/release-notes-generator/-/release-notes-generator-9.0.1.tgz#732d285d103064f2a64f08a32031551ebb4f918b"
   integrity sha512-bOoTiH6SiiR0x2uywSNR7uZcRDl22IpZhj+Q5Bn0v+98MFtOMhCxFhbrKQjhbYoZw7vps1mvMRmFkp/g6R9cvQ==
@@ -3661,7 +3661,7 @@ node-emoji@^1.10.0:
   dependencies:
     lodash.toarray "^4.4.0"
 
-node-env-run@^4.0.2:
+node-env-run@4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/node-env-run/-/node-env-run-4.0.2.tgz#41c07cc6d6eef73300e30411af42b8be27578d83"
   integrity sha512-qAGmXrM32xUGdaCBmkQG8RIgm+8Oj22rURkAoX9HuKDQiM0Vm66QebkWEnU5nozYgPbO/PFPrPmerI6ZEPp8UQ==
@@ -4875,7 +4875,7 @@ safe-buffer@~5.2.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-semantic-release@^17.4.1:
+semantic-release@17.4.1:
   version "17.4.1"
   resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-17.4.1.tgz#71b89a772452f8cd3bbd55bbf99287630be1c81f"
   integrity sha512-o/Rjk0HCBUWEYxN99Vq04Th+XtRQAxbC+FN+pBQ49wpqQ5NW/cfwhfw0qyxeTEhbchQ/1/KGMPWqD4/rRScAag==
