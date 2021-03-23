@@ -10,14 +10,17 @@
     "prepublishOnly": "yarn build",
     "release": "semantic-release",
     "release:local": "node-env-run --exec \"semantic-release\"",
-    "build": "tsc --outDir dist/es && tsc --outDir dist/cjs --module CommonJS",
-    "prebuild": "yarn clean",
-    "build:watch": "tsc --outDir dist/es -w",
     "fix": "yarn lint:fix && yarn prettier:fix",
     "lint": "eslint ./ --ext js,jsx,ts,tsx",
     "lint:fix": "eslint ./ --ext js,jsx,ts,tsx --fix",
     "prettier": "prettier --check ./**/*.{js,jsx,ts,tsx}",
-    "prettier:fix": "prettier --write ./**/*.{js,jsx,ts,tsx}"
+    "prettier:fix": "prettier --write ./**/*.{js,jsx,ts,tsx}",
+    "build": "yarn build:check && yarn build:types && yarn build:cjs && yarn build:esm",
+    "prebuild": "yarn clean",
+    "build:check": "tsc --noEmit",
+    "build:types": "tsc -p tsconfig.types.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json"
   },
   "repository": {
     "type": "git",
