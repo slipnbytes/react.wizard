@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/hitechline/react-wizard/compare/v2.0.0...v2.0.1) (2021-03-23)
+
+
+### Bug Fixes
+
+* module main file ([c365d3c](https://github.com/hitechline/react-wizard/commit/c365d3c4a959f1d440c86ffbd74ad5a00d7a6436))
+
 # [2.0.0](https://github.com/hitechline/react-wizard/compare/v1.0.1...v2.0.0) (2021-03-23)
 
 
