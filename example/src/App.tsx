@@ -1,4 +1,4 @@
-import { Wizard, Steps, Header } from '../..';
+import { Wizard, WizardSteps, Header } from '../..';
 import { WizardFooter } from './components/WizardFooter';
 import { AddressData } from './steps/AddressData';
 import { FinishData } from './steps/FinishData';
@@ -27,11 +27,11 @@ export const App = (): JSX.Element => (
       />
 
       <div className="content">
-        <Steps>
+        <WizardSteps>
           <PersonalData />
           <AddressData />
           <FinishData />
-        </Steps>
+        </WizardSteps>
 
         <WizardFooter />
       </div>
