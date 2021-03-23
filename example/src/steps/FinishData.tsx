@@ -1,3 +1,1 @@
-const FinishData = () => <h1>Concluir</h1>;
-
-export default FinishData;
+export const FinishData = (): JSX.Element => <h1>Concluir</h1>;

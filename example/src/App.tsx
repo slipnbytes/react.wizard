@@ -1,14 +1,12 @@
-import { Wizard, Steps, Header } from '../../';
-
-import PersonalData from './steps/PersonalData';
-import AddressData from './steps/AddressData';
-import FinishData from './steps/FinishData';
-
-import WizardFooter from './components/WizardFooter';
+import { Wizard, Steps, Header } from '../..';
+import { WizardFooter } from './components/WizardFooter';
+import { AddressData } from './steps/AddressData';
+import { FinishData } from './steps/FinishData';
+import { PersonalData } from './steps/PersonalData';
 
 import './index.css';
 
-const App = () => (
+export const App = (): JSX.Element => (
   <div className="App">
     <Wizard>
       <Header
@@ -40,5 +38,3 @@ const App = () => (
     </Wizard>
   </div>
 );
-
-export default App;

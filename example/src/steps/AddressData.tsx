@@ -1,3 +1,1 @@
-const AddressData = () => <h1>Endereço</h1>;
-
-export default AddressData;
+export const AddressData = (): JSX.Element => <h1>Endereço</h1>;

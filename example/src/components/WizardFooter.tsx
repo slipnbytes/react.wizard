@@ -1,6 +1,6 @@
-import { useWizard } from '../../../';
+import { useWizard } from '../../..';
 
-const WizardFooter = () => {
+export const WizardFooter = (): JSX.Element => {
   const { next, previous } = useWizard();
 
   return (
@@ -15,5 +15,3 @@ const WizardFooter = () => {
     </footer>
   );
 };
-
-export default WizardFooter;
