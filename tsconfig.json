@@ -2,9 +2,9 @@
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist", "typings"],
   "compilerOptions": {
-    "jsx": "react",
-    "target": "ES6",
+    "jsx": "react-jsx",
     "baseUrl": "src",
+    "target": "ES2015",
     "module": "CommonJS",
     "moduleResolution": "Node",
     "declarationDir": "typings",
