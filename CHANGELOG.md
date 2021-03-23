@@ -1,3 +1,30 @@
+# [2.0.0](https://github.com/hitechline/react-wizard/compare/v1.0.1...v2.0.0) (2021-03-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @testing-library/user-event to v12.8.3 ([28c4372](https://github.com/hitechline/react-wizard/commit/28c4372ec11644818f74ad54aa8cf4706acca731))
+* **deps:** update dependency @types/jest to v26.0.21 ([d9cb462](https://github.com/hitechline/react-wizard/commit/d9cb4626931fddc8b19fffc477b9ced62168075f))
+* **deps:** update dependency @types/node to v12.20.5 ([66f6c36](https://github.com/hitechline/react-wizard/commit/66f6c360ae88ef75fa42886b4f64f47392d99740))
+* **deps:** update dependency @types/node to v12.20.6 ([0cffc8d](https://github.com/hitechline/react-wizard/commit/0cffc8d6b83fa4e0ffba8149c577fad5b2c78e31))
+* **deps:** update dependency react-scripts to v4.0.3 ([7833c29](https://github.com/hitechline/react-wizard/commit/7833c299badc0d5bdf4e82a0012bcec25ff906d9))
+* **deps:** update dependency web-vitals to v1.1.1 ([0184be2](https://github.com/hitechline/react-wizard/commit/0184be24511708240e8ad272d217bb64d931a3c3))
+* **deps:** update react monorepo to v17.0.2 ([4054a2f](https://github.com/hitechline/react-wizard/commit/4054a2f3dd19fbe715bbfca5d2dc7a284c56959c))
+* **deps:** upgrade @hitechline/reactools to v1.1.2 ([92a136a](https://github.com/hitechline/react-wizard/commit/92a136a7bc7c4b746c044b30f78ef7ece904d804))
+
+
+### Features
+
+* change exports names ([f4bddfc](https://github.com/hitechline/react-wizard/commit/f4bddfc31756549bb5b51e9bb38404cc363e0d6f))
+
+
+### BREAKING CHANGES
+
+* Named imports was changed
+  * Steps -> WizardSteps
+  * Provider -> WizardProvider
+  * Context -> WizardContext
+
 ## [1.0.1](https://github.com/hitechline/react-wizard/compare/v1.0.0...v1.0.1) (2021-03-06)
 
 
