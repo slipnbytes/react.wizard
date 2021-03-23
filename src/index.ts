@@ -1,9 +1,13 @@
+// Types
 export * from './types';
 
-export { Provider, Context } from './Context';
+// Context
+export * from './Context';
 
-export { default as Steps } from './components/Steps';
-export { default as Header } from './components/Header';
-export { default as Wizard } from './components/Wizard';
+// Hooks
+export * from './hooks/useWizard';
 
-export { default as useWizard } from './hooks/useWizard';
+// Components
+export * from './components/Steps';
+export * from './components/Header';
+export * from './components/Wizard';

@@ -1,8 +1,6 @@
 import { useContext } from 'react';
 
-import { Context } from '../Context';
-import { WizardContext } from '../types';
+import { WizardContext } from '../Context';
+import type { WizardContextData } from '../types';
 
-const useWizard = (): WizardContext => useContext(Context);
-
-export default useWizard;
+export const useWizard = (): WizardContextData => useContext(WizardContext);

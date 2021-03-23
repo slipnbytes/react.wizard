@@ -1,4 +1,4 @@
-import React, {
+import {
   Children,
   createContext,
   useMemo,
@@ -7,11 +7,15 @@ import React, {
   ReactNode,
 } from 'react';
 
-import { WizardContext, WizardProviderProps } from './types';
+import type { WizardContextData, WizardProviderProps } from './types';
 
-export const Context = createContext<WizardContext>({} as WizardContext);
+export const WizardContext = createContext<WizardContextData>(
+  {} as WizardContextData,
+);
 
-export const Provider = ({ children }: WizardProviderProps): JSX.Element => {
+export const WizardProvider = ({
+  children,
+}: WizardProviderProps): JSX.Element => {
   const [current, setCurrent] = useState(0);
   const [steps, setSteps] = useState<ReactNode>();
 
@@ -46,10 +50,10 @@ export const Provider = ({ children }: WizardProviderProps): JSX.Element => {
     }
 
     setCurrent(currentPlus);
-  }, [count, current]);
+  }, [current]);
 
   return (
-    <Context.Provider
+    <WizardContext.Provider
       value={{
         count,
         current,
@@ -60,6 +64,6 @@ export const Provider = ({ children }: WizardProviderProps): JSX.Element => {
       }}
     >
       {children}
-    </Context.Provider>
+    </WizardContext.Provider>
   );
 };

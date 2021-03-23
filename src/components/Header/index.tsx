@@ -1,11 +1,15 @@
 import { mergeClassNames } from '@hitechline/reactools';
-import React, { useMemo, useCallback } from 'react';
+import { useMemo, useCallback } from 'react';
 
-import useWizard from '../../hooks/useWizard';
-import { HeaderProps } from '../../types';
+import { useWizard } from '../../hooks/useWizard';
+import type { HeaderProps } from '../../types';
 import { Container, Part, Name } from './styles';
 
-const Header = ({ custom, className, ...props }: HeaderProps): JSX.Element => {
+export const Header = ({
+  custom,
+  className,
+  ...props
+}: HeaderProps): JSX.Element => {
   const { count, current } = useWizard();
 
   const hasSelected = useCallback((index: number) => index === current, [
@@ -24,7 +28,7 @@ const Header = ({ custom, className, ...props }: HeaderProps): JSX.Element => {
         indexSum: index + 1,
         ...custom?.find((_customData, customIndex) => customIndex === index),
       })),
-    [count],
+    [count, custom],
   );
 
   return (
@@ -54,5 +58,3 @@ const Header = ({ custom, className, ...props }: HeaderProps): JSX.Element => {
     </Container>
   );
 };
-
-export default Header;

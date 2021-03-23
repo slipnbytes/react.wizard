@@ -1,15 +1,19 @@
 import { mergeClassNames } from '@hitechline/reactools';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
-import useWizard from '../hooks/useWizard';
-import { StepsProps } from '../types';
+import { useWizard } from '../hooks/useWizard';
+import type { WizardStepsProps } from '../types';
 
-const Steps = ({ children, className, ...props }: StepsProps): JSX.Element => {
+export const WizardSteps = ({
+  children,
+  className,
+  ...props
+}: WizardStepsProps): JSX.Element => {
   const { current, getStep, registerSteps } = useWizard();
 
   useEffect(() => {
     registerSteps(children);
-  }, [children]);
+  }, [children, registerSteps]);
 
   return (
     <div {...props} className={mergeClassNames('wizard-steps', className)}>
@@ -17,5 +21,3 @@ const Steps = ({ children, className, ...props }: StepsProps): JSX.Element => {
     </div>
   );
 };
-
-export default Steps;

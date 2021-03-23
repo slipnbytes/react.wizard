@@ -1,19 +1,16 @@
 import { mergeClassNames } from '@hitechline/reactools';
-import React from 'react';
 
-import { Provider } from '../Context';
-import { WizardProps } from '../types';
+import { WizardProvider } from '../Context';
+import type { WizardProps } from '../types';
 
-const Wizard = ({
+export const Wizard = ({
   children,
   className,
   ...props
 }: WizardProps): JSX.Element => (
-  <Provider>
+  <WizardProvider>
     <div {...props} className={mergeClassNames('wizard', className)}>
       {children}
     </div>
-  </Provider>
+  </WizardProvider>
 );
-
-export default Wizard;

@@ -1,10 +1,10 @@
-/* eslint-disable @typescript-eslint/no-empty-interface */
+import type { ReactNode, HTMLAttributes } from 'react';
 
-import { ReactNode, HTMLAttributes } from 'react';
+export interface WizardProviderProps {
+  children?: ReactNode;
+}
 
-export interface WizardProviderProps extends PropsWithChildren {}
-
-export interface WizardContext {
+export interface WizardContextData {
   count: number;
   current: number;
   next(): void;
@@ -13,12 +13,12 @@ export interface WizardContext {
   registerSteps(stepsToRegister: ReactNode[]): void;
 }
 
-export interface StepsProps extends HTMLAttributes<HTMLDivElement> {
-  children: ReactNode[];
-}
-
 export interface WizardProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
+}
+
+export interface WizardStepsProps extends HTMLAttributes<HTMLDivElement> {
+  children: ReactNode[];
 }
 
 export interface HeaderProps extends HTMLAttributes<HTMLHeadingElement> {
