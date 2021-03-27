@@ -25,7 +25,7 @@
     "web-vitals": "1.1.1"
   },
   "devDependencies": {
-    "@types/node": "12.20.6",
+    "@types/node": "12.20.7",
     "@types/react": "17.0.3",
     "@types/react-dom": "17.0.3",
     "react-scripts": "4.0.3",
