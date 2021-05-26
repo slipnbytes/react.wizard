@@ -59,7 +59,7 @@
     "@semantic-release/github": "7.2.1",
     "@semantic-release/npm": "7.1.1",
     "@semantic-release/release-notes-generator": "9.0.2",
-    "@types/react": "17.0.7",
+    "@types/react": "17.0.8",
     "@types/react-dom": "17.0.5",
     "@typescript-eslint/eslint-plugin": "4.25.0",
     "@typescript-eslint/parser": "4.25.0",
