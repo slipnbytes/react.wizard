@@ -12,9 +12,10 @@ export const Header = ({
 }: HeaderProps): JSX.Element => {
   const { count, current } = useWizard();
 
-  const hasSelected = useCallback((index: number) => index === current, [
-    current,
-  ]);
+  const hasSelected = useCallback(
+    (index: number) => index === current,
+    [current],
+  );
 
   const hasActive = useCallback(
     (index: number) => index !== current && current > index,
