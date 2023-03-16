@@ -54,7 +54,7 @@
     "@hitechline/reactools": "^1.1.2"
   },
   "devDependencies": {
-    "@hitechline/eslint-config": "2.0.3",
+    "@hitechline/eslint-config": "2.0.5",
     "@hitechline/semantic-release-config": "1.2.0",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/commit-analyzer": "8.0.1",
